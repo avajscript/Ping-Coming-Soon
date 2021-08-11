@@ -1,0 +1,109 @@
+@mixin input-style {
+  border-radius: 2em;
+  padding: 15px 20px;
+  float: left;
+  width: 100%;
+}
+
+@mixin width {
+  width: 80%;
+  margin: 5em auto 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+body {
+  font-size: 16px;
+}
+.main {
+  text-align: center;
+}
+
+.top-section {
+  @include width;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+  }
+  p {
+    color: hsl(354, 100%, 66%);
+    position: relative;
+    top: -5px;
+    padding-bottom: 2em;
+  }
+  img {
+    height: 15px;
+    margin-bottom: 2em;
+  }
+  header p {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: black;
+  }
+}
+
+input[type="email"] {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  @include input-style;
+  border: 1px solid hsl(223, 100%, 88%);
+  outline: none;
+
+  &::placeholder {
+    color: #d3d3d3;
+  }
+}
+
+div.button {
+  @include input-style;
+  width: 100%;
+  background-color: #4d7bf3;
+  color: white;
+  box-shadow: 0 5px 5px 0 hsl(223, 100%, 88%);
+  cursor: pointer;
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.mid-section {
+  @include width;
+
+  img {
+    width: 100%;
+  }
+}
+footer {
+  margin-top: 10em;
+  p {
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+    padding-top: 2em;
+  }
+}
+
+ul {
+  li {
+    display: inline-block;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 4em;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    a:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+}

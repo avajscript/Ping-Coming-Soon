@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+.main {
+  text-align: center;
+}
+
+.top-section {
+  width: 80%;
+  margin: 5em auto 0;
+}
+
+.top-section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.top-section span {
+  color: #969696;
+  font-weight: 300;
+}
+
+.top-section p {
+  color: #ff5263;
+  position: relative;
+  top: -5px;
+  padding-bottom: 2em;
+}
+
+.top-section img {
+  height: 15px;
+  margin-bottom: 2em;
+}
+
+.top-section header p {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: black;
+}
+
+input[type="email"] {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  padding: 15px 20px;
+  float: left;
+  width: 100%;
+  border: 1px solid #c2d3ff;
+  outline: none;
+}
+
+input[type="email"]::placeholder {
+  color: #d3d3d3;
+}
+
+div.button {
+  border-radius: 2em;
+  padding: 15px 20px;
+  float: left;
+  width: 100%;
+  width: 100%;
+  background-color: #4d7bf3;
+  color: white;
+  box-shadow: 0 5px 5px 0 #c2d3ff;
+  cursor: pointer;
+}
+
+div.button:active {
+  box-shadow: none;
+}
+
+.mid-section {
+  width: 80%;
+  margin: 5em auto 0;
+}
+
+.mid-section img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 10em;
+}
+
+footer p {
+  color: #969696;
+  font-size: 14px;
+  padding-top: 2em;
+}
+
+ul li {
+  display: inline-block;
+  border: 1px solid #c2d3ff;
+  border-radius: 4em;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+ul li a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
