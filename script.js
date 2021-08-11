@@ -13,7 +13,7 @@ window.onload = () => {
     if (!boolEmail) {
       // if not valid email create border and popup
       inputField.style.border = "1px solid hsl(354, 100%, 66%)";
-      validPopup.style.display = "inline-block";
+      validPopup.style.display = "block";
     } else {
       // remove border and popup
       inputField.style.border = "1px solid hsl(223, 100%, 88%)";

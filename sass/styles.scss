@@ -6,7 +6,6 @@
 }
 
 @mixin width {
-  width: 80%;
   margin: 5em auto 0;
 }
 
@@ -21,6 +20,8 @@ body {
 }
 .main {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .top-section {
@@ -52,8 +53,8 @@ body {
 }
 
 input[type="email"] {
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   @include input-style;
   border: 1px solid hsl(223, 100%, 88%);
   outline: none;
@@ -104,6 +105,35 @@ ul {
       display: inline-block;
       vertical-align: middle;
       height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1052px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .main {
+    width: 50%;
+  }
+  .top-section {
+    p {
+      color: blue;
+      text-align: left;
+    }
+    img {
+      height: 25px;
+    }
+    input {
+      width: 70%;
+      margin-right: 5%;
+    }
+
+    div.button {
+      width: 25%;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
   }
 }
