@@ -79,6 +79,10 @@ div.button:active {
   box-shadow: none;
 }
 
+div.button:hover {
+  background-color: #80a4ff;
+}
+
 .mid-section {
   margin: 5em auto 0;
 }
@@ -97,6 +101,14 @@ footer p {
   padding-top: 2em;
 }
 
+footer a {
+  color: #4f7df3;
+}
+
+footer a:hover {
+  color: white;
+}
+
 ul li {
   display: inline-block;
   border: 1px solid #c2d3ff;
@@ -104,6 +116,10 @@ ul li {
   width: 40px;
   height: 40px;
   margin: 0 5px;
+}
+
+ul li:hover {
+  background-color: #4f7df3;
 }
 
 ul li a:before {
@@ -121,8 +137,18 @@ ul li a:before {
     width: 50%;
   }
   .top-section p {
-    color: blue;
+    padding-bottom: 1em;
+  }
+  .top-section .p-wrapper {
+    position: relative;
+  }
+  .top-section .p-wrapper p {
     text-align: left;
+    float: left;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    font-style: italic;
   }
   .top-section img {
     height: 25px;

@@ -74,6 +74,9 @@ div.button {
   &:active {
     box-shadow: none;
   }
+  &:hover {
+    background-color: hsl(223, 100%, 75%);
+  }
 }
 
 .mid-section {
@@ -85,10 +88,17 @@ div.button {
 }
 footer {
   margin-top: 10em;
+
   p {
     color: hsl(0, 0%, 59%);
     font-size: 14px;
     padding-top: 2em;
+  }
+  a {
+    color: hsl(223, 87%, 63%);
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -100,6 +110,9 @@ ul {
     width: 40px;
     height: 40px;
     margin: 0 5px;
+    &:hover {
+      background-color: hsl(223, 87%, 63%);
+    }
     a:before {
       content: "";
       display: inline-block;
@@ -119,8 +132,19 @@ ul {
   }
   .top-section {
     p {
-      color: blue;
-      text-align: left;
+      padding-bottom: 1em;
+    }
+    .p-wrapper {
+      position: relative;
+
+      p {
+        text-align: left;
+        float: left;
+        position: absolute;
+        top: 90px;
+        left: 20px;
+        font-style: italic;
+      }
     }
     img {
       height: 25px;
